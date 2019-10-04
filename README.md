@@ -57,8 +57,7 @@
     1.4.3.commit객체는 tree객체명과 Author, Date, Committer를 저장한다.<br>
     1.4.4.2번째 commit객체부터는 parent라고 이전 commit객체명을 저장한다.<br>
     -----
-    ![image_commit][commit]
-    [commit]:https://milooy.files.wordpress.com/2019/06/git-github.013.jpeg?w=768 "explain of git commit"
+    ![image_commit][commit](https://milooy.files.wordpress.com/2019/06/git-github.013.jpeg?w=768)"explain of git commit"
 
 
 
