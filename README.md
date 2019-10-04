@@ -29,8 +29,8 @@
 
   #Git의 원리
   =====
-  ##1.0 Gistory 설치
-    pip3 install gistory
+  ##1.0 Gistory 설치<br>
+        1.0.1pip3 install gistory
     
   ###1.1 git init의 원리
   =====
