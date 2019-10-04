@@ -1,4 +1,4 @@
-  #Github 강의(생활 코딩 git 강의 참조)
+  #Github 강의<https://opentutorials.org/module/2676>
 
     ##1. Git 의 원리
     =====
@@ -13,7 +13,7 @@
     =====
       2.1 git branch 만들기
       2.2 git branch 정보 확인
-      2.3 branch 병합gt
+      2.3 branch 병합
       
     ##3. git merge 과정
     =====
