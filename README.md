@@ -35,7 +35,7 @@
   ###1.1 git init의 원리
   =====
     1.1.1 깃 저장소를 초기화한다. 저장소나 디렉토리 안에서 이 명령을 실행하기 전까지는 그냥 일반 폴더이다. 
-  이것을 입력한 후에야 추가적인 깃 명령어들을 줄 수 있다.
+          이것을 입력한 후에야 추가적인 깃 명령어들을 줄 수 있다.
     1.1.2 깃 명령어를 주기 위해 시작점을 알리는 명령어
   
   ###1.3 git add의 원리
@@ -55,7 +55,7 @@
     1.4.2.tree객체는 commit할때의 index를 스냅샷찍어서 저장한다.<br>
     1.4.3.commit객체는 tree객체명과 Author, Date, Committer를 저장한다.<br>
     1.4.4.2번째 commit객체부터는 parent라고 이전 commit객체명을 저장한다.<br>
-
+    -----
     ![image_commit][commit]
     [commit]:https://milooy.files.wordpress.com/2019/06/git-github.013.jpeg?w=768 "explain of git commit"
 
