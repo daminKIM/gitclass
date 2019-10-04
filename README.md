@@ -47,10 +47,10 @@
       1.3.4.1파일의 내용을 담고 있는 object참조값(파일명)을 가지는 blob<br>
       1.3.4.2파일명과 내용을 담고 있는 object참조값(파일명)을 가지는 blob의 집합을 담고 있는 tree<br>
       1.3.4.3마지막으로 commit<br>
-  =====
+
 
   ###1.4 git commit의 원리
-
+  =====
     1.4.1.git commit을 하면 commit 한 모든 objects에 대한 정보를 tree객체로 만든다.<br>
     1.4.2.tree객체는 commit할때의 index를 스냅샷찍어서 저장한다.<br>
     1.4.3.commit객체는 tree객체명과 Author, Date, Committer를 저장한다.<br>
