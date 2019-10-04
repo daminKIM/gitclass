@@ -13,7 +13,7 @@
    =====
     2.1 git branch 만들기
     2.2 git branch 정보 확인
-    2.3 branch 병합
+    2.3 branch 병합gt
     
    ##3. git merge 과정
    =====
