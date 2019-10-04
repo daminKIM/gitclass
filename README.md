@@ -30,7 +30,7 @@
   #Git의 원리
   =====
   ##1.0 Gistory 설치
-  ### pip3 install gistory
+  ###pip3 install gistory
 
   ###1.1 git init의 원리
   -----
@@ -41,13 +41,28 @@
   
   ###1.2 git add의 원리
   -----
-  1.git add를 했을때 index(=stage area,tree구조)에 object이름과 실제파일이름이 추가되고(추적등록) objects에 blob타입으로 파일내용이 추가된다.
-  2.git에서 원하는 파일만을 stage area
+  1.git에서 원하는 파일만을 stage area 에 올릴 수 있음
+  2.stage area에 올라간 파일은 index와 그에 따른 objectId 그리고 지칭하는 실제 파일을 담는다.
+  3.objectId는 SHA1이라는 함수에 의해 생성된다.
+  4.object의 3형태
+  파일의 내용을 담고 있는 object참조값(파일명)을 가지는 blob
+  파일명과 내용을 담고 있는 object참조값(파일명)을 가지는 blob의 집합을 담고 있는 tree
+  마지막으로 commit
+  -----
+
 
   ###1.3 git commit의 원리
   -----
+
+  1.git commit을 하면 commit 한 모든 objects에 대한 정보를 tree객체로 만든다.
+  2.tree객체는 commit할때의 index를 스냅샷찍어서 저장한다.
+  3.commit객체는 tree객체명과 Author, Date, Committer를 저장한다.
+  4.2번째 commit객체부터는 parent라고 이전 commit객체명을 저장한다.
+
   ![image_commit][commit]
   [commit]:https://milooy.files.wordpress.com/2019/06/git-github.013.jpeg?w=768 "explain of git commit"
+
+  -----
 
 
 
