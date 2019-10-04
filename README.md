@@ -46,9 +46,9 @@
   2.stage area에 올라간 파일은 index와 그에 따른 objectId 그리고 지칭하는 실제 파일을 담는다.
   3.objectId는 SHA1이라는 함수에 의해 생성된다.
   4.object의 3형태
-    파일의 내용을 담고 있는 object참조값(파일명)을 가지는 blob
-    파일명과 내용을 담고 있는 object참조값(파일명)을 가지는 blob의 집합을 담고 있는 tree
-    마지막으로 commit
+    4.1파일의 내용을 담고 있는 object참조값(파일명)을 가지는 blob
+    4.2파일명과 내용을 담고 있는 object참조값(파일명)을 가지는 blob의 집합을 담고 있는 tree
+    4.3마지막으로 commit
   =====
 
 
