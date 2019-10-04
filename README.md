@@ -48,6 +48,9 @@
       1.3.4.1파일의 내용을 담고 있는 object참조값(파일명)을 가지는 blob<br>
       1.3.4.2파일명과 내용을 담고 있는 object참조값(파일명)을 가지는 blob의 집합을 담고 있는 tree<br>
       1.3.4.3마지막으로 commit<br>
+  =====
+  ![image_add][add](https://milooy.files.wordpress.com/2019/06/git-github.014.jpeg?w=768)"explain of git add"
+
 
 
   ###1.4 git commit의 원리
@@ -56,8 +59,10 @@
     1.4.2.tree객체는 commit할때의 index를 스냅샷찍어서 저장한다.<br>
     1.4.3.commit객체는 tree객체명과 Author, Date, Committer를 저장한다.<br>
     1.4.4.2번째 commit객체부터는 parent라고 이전 commit객체명을 저장한다.<br>
-    -----
-    ![image_commit][commit](https://milooy.files.wordpress.com/2019/06/git-github.013.jpeg?w=768)"explain of git commit"
+  =====
+  ![image_commit][commit](https://milooy.files.wordpress.com/2019/06/git-github.014.jpeg?w=768)"explain of git commit"
+  ![image_push][push](https://milooy.files.wordpress.com/2019/06/git-github.016.jpeg?w=768)"explain of git push"
+
 
 
 
