@@ -1,4 +1,6 @@
+<<<<<<< HEAD
   [#Github 강의](https://opentutorials.org/module/2676)
+  
 
     ##1. Git 의 원리
     =====
