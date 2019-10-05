@@ -7,7 +7,7 @@
       1.2. git status의 원리
       1.3. git add 의 원리
       1.4. git commit의 원리
-      
+      https://backlog.com/git-tutorial/kr/intro/intro1_1.html
     
     ##2. Git branch 원리
     =====
@@ -84,10 +84,12 @@
     3.2.2 자동 병합이 되지 않는다는 오류 메세지가 터미널에서 나타나고, 이 때 우리가 쓰는 vscode에서 충돌 해결 방법은 git 메뉴로 들어가서
           changes를 확인하며, 어떠한 변경 사항을 넣을 것인지 체크만 해주면 된다.<https://www.youtube.com/watch?v=kBIMGOxqqnk>
     3.2.3 아니면 본인이 원하는 내용을 현재 로컬에서 수정해주어 파일을 저장시키는 방법이 있다.(필자 경험)
-    3.2.4 자세한 과정은 영상을 참고하길 바란다.<https://opentutorials.org/module/2676/15275>
+    3.2.4 자세한 과정은 영상을 참고하길 바란다. <https://opentutorials.org/module/2676/15275>
 
-
-
+  ###4.0 참고자료
+  =====
+    4.0.1 git add와 commit 그리고 push에 대해 쉽게 설명한 자료 <https://milooy.wordpress.com/2019/06/08/git-add-commit/>
+    4.0.2 git 공부를 위한 참고자료 <https://backlog.com/git-tutorial/kr/intro/intro1_1.html>
     
 
 
