@@ -1,4 +1,4 @@
-  #Github 강의<https://opentutorials.org/module/2676>
+  [#Github 강의](https://opentutorials.org/module/2676)
 
     ##1. Git 의 원리
     =====
@@ -13,19 +13,11 @@
     =====
       2.1 git branch 만들기
       2.2 git branch 정보 확인
-      2.3 branch 병합
       
     ##3. git merge 과정
     =====
-      3.1 reset과 checkout의 원리
+      3.1 git merge
       3.2 merge와 conflict의 원리
-      3.3 3way merge 
-    ##4. Github
-    =====
-      4.1 원격 저장소를 지역 저장소로 복제(Github)
-      4.2 원격 저장소 만들기(Github)
-      4.3 원격 저장소와 지역 저장소의 동기화 방법 (Github)
-      -----
 
   #Git의 원리
   =====
@@ -63,6 +55,40 @@
   ![image_commit][commit](https://milooy.files.wordpress.com/2019/06/git-github.014.jpeg?w=768)"explain of git commit"
   ![image_push][push](https://milooy.files.wordpress.com/2019/06/git-github.016.jpeg?w=768)"explain of git push"
 
+  ###2.0 git branch의 원리
+  =====
+    2.0.1 branch는 독립적으로 작업하기 위한 영역
+    2.0.2 branch 내부를 보자면 ref/HEAD/(branch), 처음 만들었을 경우 master branch가 초기 설정
+    2.0.3 branch 안에는 최신 commit id를 포함하고 있으며, 최신 commit은 parent와 tree를 포함(앞에 설명과 유사)
+    2.0.4 git log 기능에서 최신 commit한 사용할 수 있는 이유는 branch 내부 안에, 최신 commit 한 commitId를 갖고 있기 때문이다.
+    ![image_branch][branch](https://backlog.com/git-tutorial/kr/img/post/stepup/capture_stepup1_1_1.png)"explain of git branch"
+  ###2.1 git branch 정보 확인
+  =====
+    2.1.1 git branch 만들기 -> git branch "branch 이름"
+    2.1.2 내가 만든 branch로 들어가고 싶을 경우 -> git checkout "내가 만들 branch 이름"
+    2.1.3 내가 만든 branch를 삭제 하고 싶을 경우 -> git branch -d "내가 만든 branch 이름
+    2.1.4 내가 만든 branch로 생성하고 바로 옮겨가고 싶을 경우 -> git checkout -b "생성하고 전환할 브랜치 이름"
+    2.1.5 본인이 더 branch 기능에 대해 공부 하고 싶을 경우 -> git branch --help
+  
+  ###3.1 branch 병합(merge)<https://backlog.com/git-tutorial/kr/stepup/stepup2_7.html>
+  =====
+    3.1.1 branch는 분기를 만드는 것이라고 했다. 즉 다른 작업을 진행하던 중 서로 다르게 코드 작업 했던 것을 merge 하고 싶다.
+    3.1.2 이 때 사용하는 것이 merge 작업
+    3.1.3 내가 작업하고 있는 branch가 두 개라고 가정하자, master와 exp 그 둘을 합치고자 한다. exp에서 작업하던 것을 master로 넘기고 싶다.<br>
+          일단 첫 번째 , master branch로 옮겨간다.
+    3.1.4 여기서 git merge exp로 넘어가면 끝이다.
+    3.1.5 병합 되는 branch들을 자세히 보고 싶을 경우, git log --branches --graph --decorate
+  ###3.2 merge & conflict
+  =====
+    3.2.1 간혹, 병합 충돌이 일어나는 경우가 있다. 대표적으로 파일 명이 같은데, 같은 행에 오류가 날 경우 병합 충돌이 일어난다.
+    3.2.2 자동 병합이 되지 않는다는 오류 메세지가 터미널에서 나타나고, 이 때 우리가 쓰는 vscode에서 충돌 해결 방법은 git 메뉴로 들어가서
+          changes를 확인하며, 어떠한 변경 사항을 넣을 것인지 체크만 해주면 된다.<https://www.youtube.com/watch?v=kBIMGOxqqnk>
+    3.2.3 아니면 본인이 원하는 내용을 현재 로컬에서 수정해주어 파일을 저장시키는 방법이 있다.(필자 경험)
+    3.2.4 자세한 과정은 영상을 참고하길 바란다.<https://opentutorials.org/module/2676/15275>
+
+
+
+    
 
 
 
