@@ -8,7 +8,6 @@
       1.2. git status의 원리
       1.3. git add 의 원리
       1.4. git commit의 원리
-      https://backlog.com/git-tutorial/kr/intro/intro1_1.html
     
     ##2. Git branch 원리
     =====
@@ -61,8 +60,8 @@
     2.0.1 branch는 독립적으로 작업하기 위한 영역
     2.0.2 branch 내부를 보자면 ref/HEAD/(branch), 처음 만들었을 경우 master branch가 초기 설정
     2.0.3 branch 안에는 최신 commit id를 포함하고 있으며, 최신 commit은 parent와 tree를 포함(앞에 설명과 유사)
-    2.0.4 git log 기능에서 최신 commit한 사용할 수 있는 이유는 branch 내부 안에
-          최신 commit 한 commitId를 갖고 있기 때문이다.
+    2.0.4 git log 기능에서 최신 commit한 사용할 수 있는 이유는 branch 내부 안에 최신 commit 한 commitId를 갖고 있기 때문이다.
+    =====
     ![image_branch][branch](https://backlog.com/git-tutorial/kr/img/post/stepup/capture_stepup1_1_1.png)"explain of git branch"
   ###2.1 git branch 정보 확인
   =====
